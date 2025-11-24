@@ -1,0 +1,15 @@
+App(
+    appid="checkin_beacon",
+    name="Checkin Beacon (Fixed)",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="checkin_beacon_app",
+    cdefines=["APP_CHECKIN_BEACON"],
+    requires=["gui"],
+    stack_size=2 * 1024,
+    order=20,
+    fap_icon="icon.png", # 这里如果没有icon文件，编译时可以删除这一行，或者随便找个10x10的png
+    fap_category="Bluetooth",
+    fap_author="AI_Assistant",
+    fap_version="1.0",
+    fap_description="Custom iBeacon for Attendance",
+)
